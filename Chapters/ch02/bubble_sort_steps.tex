@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+    % Initial array
+    \node at (0, 1) {64, 34, 25, 12, 22, 11, 90};
+
+    % After first pass
+    \node at (0, 0.5) {34, 25, 12, 22, 11, 64, 90};
+
+    % After second pass
+    \node at (0, 0) {25, 12, 22, 11, 34, 64, 90};
+
+    % After third pass
+    \node at (0, -0.5) {12, 22, 11, 25, 34, 64, 90};
+
+    % After fourth pass
+    \node at (0, -1) {12, 11, 22, 25, 34, 64, 90};
+
+    % Final sorted array
+    \node at (0, -1.5) {11, 12, 22, 25, 34, 64, 90};
+\end{tikzpicture}

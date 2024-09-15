@@ -1,0 +1,45 @@
+\documentclass[10pt]{styles}
+
+% -- Additional packages
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{standalone}  % Add standalone package
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{matrix}
+
+
+% -- Graphic path (adjusted to chapters' structure)
+\graphicspath{{./chapters/ch01/}{./chapters/ch02/}{./chapters/ch03/}}
+
+% -- Book Data
+\bookauthor[Y. Oksamytnyi]{Yurii Oksamytnyi}
+\booktitle{MathsCodeBook}
+\subtitle[:]{A Comprehensive Guide}
+
+% -- Logos
+\logofirst{Logos/YuriODEV}{1cm}{5cm}
+
+% -- Colors
+\definecolor{colorp}{cmyk}{0.81,0.62,0.00,0.22}
+\definecolor{colordef}{cmyk}{0.81,0.62,0.00,0.22}
+
+% -- Fonts
+\customfont{Montserrat}
+\customfont{Helvetica}
+
+\begin{document}
+\defaulttitlepage  % Title page
+
+\contenttable   % Table of contents
+
+\mainmatter  % Main content
+
+% -- Include Chapters
+\include{Chapters/ch01/chapter01}  % Chapter 1: Calculus and Basic Algebra
+\include{Chapters/ch02/chapter02}  % Chapter 2: Introduction to Algorithms
+\include{Chapters/ch03/chapter03}  % Chapter 3: Linear Algebra and Matrices
+
+\end{document}

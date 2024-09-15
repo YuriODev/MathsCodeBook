@@ -1,0 +1,15 @@
+
+\begin{tikzpicture}
+    \matrix (m) [matrix of nodes, nodes in empty cells,
+                 nodes={draw, minimum width=1.5cm, minimum height=1.5cm, anchor=center, text centered}]
+    {
+        $n$       & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+        $F(n)$    & 0 & 1 & 1 & 2 & 3 & 5 & 8 & 13 & 21 & 34 & 55 \\
+    };
+    
+    % Arrow showing how dynamic programming works
+    \draw[->, thick, red] (m-2-3.north) -- (m-2-4.north);
+    \draw[->, thick, red] (m-2-4.north) -- (m-2-5.north);
+    \draw[->, thick, red] (m-2-5.north) -- (m-2-6.north);
+    \draw[->, thick, red] (m-2-6.north) -- (m-2-7.north);
+\end{tikzpicture}

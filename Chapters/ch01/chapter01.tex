@@ -1,0 +1,177 @@
+\chapter{Calculus and Basic Algebra}
+
+\section{Limits and Continuity}
+
+\subsection{Definition of a Limit}
+\begin{defi}[Limit Definition]
+A function $f(x)$ approaches the limit $L$ as $x$ approaches $c$ if, for every number $\epsilon > 0$, there exists a number $\delta > 0$ such that whenever $0 < |x - c| < \delta$, we have $|f(x) - L| < \epsilon$.
+\end{defi}
+
+\subsection{Theorem: Intermediate Value Theorem}
+\begin{theorem}[Intermediate Value Theorem]
+If a function $f$ is continuous on the interval $[a,b]$, and $f(a)$ and $f(b)$ have opposite signs, then there exists some $x \in [a,b]$ such that $f(x) = 0$.
+\end{theorem}
+
+\begin{exercise}
+Use the Intermediate Value Theorem to show that the equation $x^3 - x - 1 = 0$ has a solution in the interval $[1, 2]$.
+\end{exercise}
+
+\subsection{Example: Calculating Limits}
+\begin{example}
+Calculate the limit:
+\[
+\lim_{x \to 1} \frac{x^2 - 1}{x - 1}
+\]
+\textbf{Solution}: Factor the numerator:
+\[
+\lim_{x \to 1} \frac{(x - 1)(x + 1)}{x - 1} = \lim_{x \to 1} (x + 1) = 2
+\]
+\end{example}
+
+\subsection{Proposition: Continuity Implies Limit}
+\begin{prop}
+For any rational function $f(x)$, if $f(x)$ is continuous at $x = a$, then:
+\[
+\lim_{x \to a} f(x) = f(a)
+\]
+\end{prop}
+
+\begin{obs}
+Even though a function can be continuous at a point, it may not be differentiable at that point. For example, $f(x) = |x|$ is continuous at $x = 0$ but not differentiable there.
+\end{obs}
+
+
+\section{Differentiation}
+
+\subsection{Definition: Derivative}
+\begin{defi}[Derivative Definition]
+The derivative of a function $f(x)$ at a point $x = a$ is defined as:
+\[
+f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+\]
+This measures the rate of change of the function at that point.
+\end{defi}
+
+\subsection{Theorem: Power Rule for Derivatives}
+\begin{theorem}[Power Rule]
+For any real number $n$, the derivative of $f(x) = x^n$ is:
+\[
+f'(x) = nx^{n-1}
+\]
+\end{theorem}
+
+\subsection{Corollary: Special Case of Power Rule}
+\begin{cor}
+As a special case of the Power Rule, the derivative of $f(x) = x^2$ is:
+\[
+f'(x) = 2x
+\]
+\end{cor}
+
+\subsection{Exercise: Differentiation Practice}
+\begin{exercise}
+Differentiate the polynomial:
+\[
+f(x) = x^3 - 3x^2 + 2x
+\]
+\end{exercise}
+
+\subsection{Python Code Snippet: Differentiation}
+\begin{codesnippet}[Differentiating a Polynomial in Python]
+\custominputminted{python}{Chapters/ch01/snippet_python.py}
+\end{codesnippet}
+
+\subsection{Example: Derivative Calculation}
+\begin{example}
+Find the derivative of the function:
+\[
+f(x) = x^3 - 2x^2 + 3x - 1
+\]
+\textbf{Solution}: Using the Power Rule:
+\[
+f'(x) = 3x^2 - 4x + 3
+\]
+\end{example}
+
+
+\section{Applications of Derivatives}
+
+\subsection{Theorem: Critical Points and Extrema}
+\begin{theorem}[Critical Points Theorem]
+Let $f(x)$ be a differentiable function. A point $c$ is called a critical point if either $f'(c) = 0$ or $f'(c)$ does not exist.
+\end{theorem}
+
+
+\begin{exercise}
+Find the critical points of the function:
+\[
+f(x) = x^3 - 6x^2 + 9x
+\]
+Then, determine whether each critical point corresponds to a local maximum, local minimum, or neither.
+\end{exercise}
+
+
+\section{Algebraic Functions and Equations}
+
+\subsection{Axiom: Properties of Real Numbers}
+\begin{axioma}
+For any real numbers $a$ and $b$, the sum $a + b$ is also a real number. This is known as closure under addition in real numbers.
+\end{axioma}
+
+\subsection{Proposition: Solving Quadratic Equations}
+\begin{prop}
+The solutions to the quadratic equation $ax^2 + bx + c = 0$ are given by the quadratic formula:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+\end{prop}
+
+\subsection{Example: Solving Quadratic Equations}
+\begin{example}
+Solve the quadratic equation:
+\[
+2x^2 - 4x + 1 = 0
+\]
+\textbf{Solution}: Using the quadratic formula:
+\[
+x = \frac{-(-4) \pm \sqrt{(-4)^2 - 4(2)(1)}}{2(2)} = \frac{4 \pm \sqrt{16 - 8}}{4} = \frac{4 \pm \sqrt{8}}{4} = \frac{4 \pm 2\sqrt{2}}{4}
+\]
+Thus, the solutions are:
+\[
+x = 1 \pm \frac{\sqrt{2}}{2}
+\]
+\end{example}
+
+\subsection{Python Code Snippet: Quadratic Solver}
+\begin{codesnippet}[Solving Quadratics in Python]
+\custominputminted{python}{Chapters/ch01/quadratic_solver.py}
+\end{codesnippet}
+
+
+\section{Trigonometric Limits}
+
+\subsection{Theorem: Sine Limit}
+\begin{theorem}[Sine Limit Theorem]
+\[
+\lim_{x \to 0} \frac{\sin x}{x} = 1
+\]
+\end{theorem}
+
+\begin{cor}
+From the limit of sine, we derive:
+\[
+\lim_{x \to 0} \frac{1 - \cos x}{x^2} = \frac{1}{2}
+\]
+\end{cor}
+
+\begin{exercise}
+Evaluate the following limit:
+\[
+\lim_{x \to 0} \frac{\tan x}{x}
+\]
+\end{exercise}
+
+\subsection{C++ Code Snippet: Calculating Sine Limit}
+\begin{codesnippet}[Sine Limit Calculation in C++]
+\custominputminted{cpp}{Chapters/ch01/sine_limit.cpp}
+\end{codesnippet}

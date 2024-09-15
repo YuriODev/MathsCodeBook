@@ -1,0 +1,26 @@
+
+
+\begin{tikzpicture}
+    % Apply Helvetica font and style to all nodes
+    \tikzstyle{every node}=[draw, fill=blue!10, rounded corners, minimum height=1cm, text width=5cm, align=center]
+
+    % Define the matrix for the recursion stack
+    \matrix (m) [matrix of nodes, column sep=0cm, row sep=0.3cm, nodes in empty cells]
+    {
+        \textbf{factorial(5)} \\
+        \textbf{factorial(4)} \\
+        \textbf{factorial(3)} \\
+        \textbf{factorial(2)} \\
+        \textbf{factorial(1)} \\
+        \textbf{factorial(0)} \\
+        \textbf{Return 1 (base case)} \\
+    };
+
+    % Draw arrows to indicate the recursion flow
+    \draw[->, thick, blue] (m-1-1.south) -- (m-2-1.north);
+    \draw[->, thick, blue] (m-2-1.south) -- (m-3-1.north);
+    \draw[->, thick, blue] (m-3-1.south) -- (m-4-1.north);
+    \draw[->, thick, blue] (m-4-1.south) -- (m-5-1.north);
+    \draw[->, thick, blue] (m-5-1.south) -- (m-6-1.north);
+    \draw[->, thick, blue] (m-6-1.south) -- (m-7-1.north);
+\end{tikzpicture}
