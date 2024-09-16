@@ -114,7 +114,7 @@ Distributed under the CC0 License. See `LICENSE` for more information.
 
 ## 💡 Acknowledgements
 
-Inspired by the [Alephsub0 Project](https://www.alephsub0.org/) and their amazing LaTeX book template. @alephsub0
+Inspired by the [Alephsub0 Project](https://www.alephsub0.org/) and their amazing LaTeX book template. [@alephsub0](https://github.com/alephsub0)
 
 ## 🎉 Contributors
 
