@@ -124,6 +124,7 @@ Inspired by the [Alephsub0 Project](https://www.alephsub0.org/) and their amazin
 
 [linkedin-shield]: https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white
 
+
 ### 📞 Contact Me
 
 [![Contact Me](https://img.shields.io/badge/Contact-Me-blue?style=for-the-badge)](mailto:contact@yuriodev.co.uk)
@@ -131,3 +132,13 @@ Inspired by the [Alephsub0 Project](https://www.alephsub0.org/) and their amazin
 
 Feel free to contribute by submitting a pull request! 😊
 
+
+## 💖 Support the Developer
+
+If you find this project helpful and would like to support its development, consider contributing through one of the following options:
+
+[![Buy Me A Coffee](https://img.shields.io/badge/-Buy%20Me%20a%20Coffee-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/yuriodev)
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue?style=for-the-badge&logo=paypal)](https://paypal.me/yuriodev)
+[![Patreon](https://img.shields.io/badge/Support-Patreon-red?style=for-the-badge&logo=patreon)](https://www.patreon.com/YuriODev)
+
+Every contribution, no matter how small, helps and is greatly appreciated! 🙏
